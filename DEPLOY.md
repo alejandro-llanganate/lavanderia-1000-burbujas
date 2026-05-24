@@ -8,6 +8,7 @@ https://alejandro-llanganate.github.io/lavanderia-1000-burbujas/
 
 ## Activar GitHub Pages (solo la primera vez)
 
+
 1. Ve al repositorio en GitHub: [lavanderia-1000-burbujas](https://github.com/alejandro-llanganate/lavanderia-1000-burbujas)
 2. **Settings** → **Pages**
 3. En **Build and deployment** → **Source**, elige **GitHub Actions**
