@@ -32,6 +32,8 @@ npm install
 npm run dev
 ```
 
+Las imágenes en `public/` se sirven en `/logo_lavanderia.png`, etc. En GitHub Pages llevan el prefijo `/lavanderia-1000-burbujas` (automático vía `assetPath`).
+
 ## Probar build igual que en producción (Pages)
 
 ```bash

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Facebook, MessageCircle, MapPin } from "lucide-react";
-import { SITE, NAV_LINKS } from "@/lib/constants";
+import { SITE, NAV_LINKS, IMAGES } from "@/lib/constants";
 import { whatsAppUrl } from "@/lib/whatsapp";
 
 export default function Footer() {
@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-12 gap-12 pb-12 border-b border-white/10">
           <div className="md:col-span-4">
             <Image
-              src="/logo_lavanderia.png"
+              src={IMAGES.logo}
               alt={SITE.name}
               width={100}
               height={100}

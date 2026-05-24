@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
+import { assetPath } from "@/lib/paths";
 import "./globals.css";
 
 const jakarta = Plus_Jakarta_Sans({
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Lavandería 1000 Burbujas",
     description: "Burbujas de frescura, ropa siempre limpia.",
-    images: ["/logo_lavanderia.png"],
+    images: [assetPath("/logo_lavanderia.png")],
   },
 };
 

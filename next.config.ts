@@ -9,7 +9,6 @@ const nextConfig: NextConfig = {
   outputFileTracingRoot: process.cwd(),
   ...(isGithubPages ? { output: "export" as const } : {}),
   basePath: basePath || undefined,
-  assetPrefix: basePath ? `${basePath}/` : undefined,
   trailingSlash: isGithubPages,
   images: {
     unoptimized: isGithubPages,

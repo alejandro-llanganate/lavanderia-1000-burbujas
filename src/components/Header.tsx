@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X, MessageCircle } from "lucide-react";
-import { NAV_LINKS, SITE } from "@/lib/constants";
+import { NAV_LINKS, SITE, IMAGES } from "@/lib/constants";
 import { whatsAppUrl } from "@/lib/whatsapp";
 import clsx from "clsx";
 
@@ -32,7 +32,7 @@ export default function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6">
         <Link href="#inicio" className="flex items-center gap-2.5">
           <Image
-            src="/logo_lavanderia.png"
+            src={IMAGES.logo}
             alt={SITE.name}
             width={48}
             height={48}

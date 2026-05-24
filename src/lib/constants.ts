@@ -1,3 +1,5 @@
+import { assetPath } from "./paths";
+
 export const SITE = {
   name: "Lavandería 1000 Burbujas",
   tagline: "Burbujas de frescura, ropa siempre limpia",
@@ -22,9 +24,9 @@ export const SITE = {
 } as const;
 
 export const IMAGES = {
-  beforeAfter: "/antes-despues-ropa.jpg",
-  facilities: "/lavadora.jpg",
-  logo: "/logo_lavanderia.png",
+  beforeAfter: assetPath("/antes-despues-ropa.jpg"),
+  facilities: assetPath("/lavadora.jpg"),
+  logo: assetPath("/logo_lavanderia.png"),
   pricingScale:
     "https://cl-cenco-pim-resizer.ecomm.cencosud.com/unsafe/adaptive-fit-in/792x1068/prd-cl/product-medias/6b7e42af-f846-434d-8ac0-0c90fcf1922e/MK7KHAAPZ5/MK7KHAAPZ5-1/1686420820813-MK7KHAAPZ5-1-1.jpg",
 } as const;
