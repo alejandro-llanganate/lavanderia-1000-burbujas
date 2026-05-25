@@ -44,7 +44,7 @@ export const NAV_LINKS = {
   ],
 } as const;
 
-export type ServiceId = "domicilio" | "peso" | "autoservicio" | "seco";
+export type ServiceId = "peso" | "autoservicio" | "seco";
 
 export interface Service {
   id: ServiceId;
@@ -55,14 +55,6 @@ export interface Service {
 }
 
 export const SERVICES: Service[] = [
-  {
-    id: "domicilio",
-    title: "Servicio a Domicilio",
-    description: "Recogemos y entregamos en la puerta de tu casa.",
-    icon: "bike",
-    image:
-      "https://img.freepik.com/foto-gratis/joven-propietaria-pequena-empresa-empacando-productos-cajas-preparandolos-entrega-mujeres-empacando-paquetes-sus-productos-que-vende-linea_657921-1227.jpg?semt=ais_rp_50_assets&w=740&q=80",
-  },
   {
     id: "peso",
     title: "Lavado al Peso",
@@ -90,7 +82,7 @@ export const SERVICES: Service[] = [
 ];
 
 export const STATS = [
-  { value: "4", label: "Servicios disponibles" },
+  { value: "3", label: "Servicios disponibles" },
   { value: "100%", label: "Compromiso con calidad" },
   { value: "24h", label: "Respuesta por WhatsApp" },
 ] as const;

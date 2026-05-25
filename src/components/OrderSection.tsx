@@ -2,7 +2,6 @@
 
 import { useState, FormEvent } from "react";
 import {
-  Bike,
   Scale,
   WashingMachine,
   Shirt,
@@ -15,11 +14,10 @@ import type { ServiceId } from "@/lib/whatsapp";
 
 const QUICK_ORDERS: {
   id: ServiceId;
-  icon: typeof Bike;
+  icon: typeof Scale;
   title: string;
   subtitle: string;
 }[] = [
-  { id: "domicilio", icon: Bike, title: "Domicilio", subtitle: "Recogida en casa" },
   { id: "peso", icon: Scale, title: "Al peso", subtitle: "Cotizar kilos" },
   { id: "autoservicio", icon: WashingMachine, title: "Autoservicio", subtitle: "Usar máquinas" },
   { id: "seco", icon: Shirt, title: "Lavado en seco", subtitle: "Prendas finas" },
@@ -27,7 +25,7 @@ const QUICK_ORDERS: {
 
 export default function OrderSection() {
   const [nombre, setNombre] = useState("");
-  const [servicio, setServicio] = useState("Servicio a domicilio");
+  const [servicio, setServicio] = useState("Lavado al peso");
   const [detalle, setDetalle] = useState("");
 
   const handleSubmit = (e: FormEvent) => {
@@ -53,7 +51,7 @@ export default function OrderSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-12 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-12 max-w-3xl mx-auto">
           {QUICK_ORDERS.map(({ id, icon: Icon, title, subtitle }) => (
             <a
               key={id}
@@ -104,7 +102,6 @@ export default function OrderSection() {
                 onChange={(e) => setServicio(e.target.value)}
                 className="w-full rounded-xl border-2 border-tertiary px-4 py-3 focus:border-primary outline-none bg-white"
               >
-                <option>Servicio a domicilio</option>
                 <option>Lavado al peso</option>
                 <option>Autoservicio</option>
                 <option>Lavado en seco</option>

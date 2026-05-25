@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "Lavandería 1000 Burbujas | Calderón, Quito",
   description:
-    "Lavandería nueva en Calderón. Lavado impecable, secado eficiente, servicio a domicilio y autoservicio. Pide por WhatsApp.",
+    "Lavandería nueva en Calderón. Lavado impecable, secado eficiente y autoservicio. Pide por WhatsApp.",
   openGraph: {
     title: "Lavandería 1000 Burbujas",
     description: "Burbujas de frescura, ropa siempre limpia.",

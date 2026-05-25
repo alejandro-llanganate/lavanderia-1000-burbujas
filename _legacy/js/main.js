@@ -8,8 +8,6 @@ const WHATSAPP_NUMBER = "593997777138";
 const MESSAGES = {
   general: "¡Hola! Vi su página web y me gustaría obtener más información sobre Lavandería 1000 Burbujas. 🫧",
   pedido: "¡Hola! Quiero hacer un pedido en Lavandería 1000 Burbujas. 🧺",
-  domicilio:
-    "¡Hola! Me interesa el *Servicio a Domicilio*.\n\n📍 Mi dirección:\n📦 Cantidad aproximada de ropa:\n🕐 Horario preferido de recogida:\n\nGracias.",
   peso:
     "¡Hola! Quiero cotizar *Lavado al peso*.\n\n⚖️ Kilos aproximados:\n👕 Tipo de ropa (normal/delicada):\n\n¿Me pueden indicar precio y tiempo? Gracias.",
   autoservicio:
@@ -19,14 +17,6 @@ const MESSAGES = {
 };
 
 const SERVICES = [
-  {
-    id: "domicilio",
-    title: "Servicio a Domicilio",
-    description: "Recogemos y entregamos tu ropa en la puerta de tu casa.",
-    query: "delivery scooter laundry",
-    unsplashId: "1600880292203-757bb62b4baf",
-    waKey: "domicilio",
-  },
   {
     id: "peso",
     title: "Lavado al peso",

@@ -3,8 +3,6 @@ import { SITE, type ServiceId } from "./constants";
 const MESSAGES: Record<string, string> = {
   general: `¡Hola! Vi su página web y me gustaría más información sobre ${SITE.name}. 🫧`,
   pedido: `¡Hola! Quiero hacer un pedido en ${SITE.name}.`,
-  domicilio:
-    "¡Hola! Me interesa el *Servicio a Domicilio*.\n\n📍 Mi dirección:\n📦 Cantidad aproximada de ropa:\n🕐 Horario preferido:\n\nGracias.",
   peso:
     "¡Hola! Quiero cotizar *Lavado al Peso*.\n\n⚖️ Kilos aproximados:\n👕 Tipo de ropa:\n\n¿Precio y tiempo? Gracias.",
   autoservicio:

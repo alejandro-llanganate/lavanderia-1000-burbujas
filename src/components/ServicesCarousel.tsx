@@ -4,7 +4,6 @@ import { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  Bike,
   Scale,
   WashingMachine,
   Shirt,
@@ -15,7 +14,6 @@ import { whatsAppUrl } from "@/lib/whatsapp";
 import type { ServiceId } from "@/lib/whatsapp";
 
 const ICONS: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
-  bike: Bike,
   scale: Scale,
   "washing-machine": WashingMachine,
   shirt: Shirt,
