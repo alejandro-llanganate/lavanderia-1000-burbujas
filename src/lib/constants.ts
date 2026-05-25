@@ -18,8 +18,9 @@ export const SITE = {
     "https://maps.google.com/maps?q=-0.09179,-78.4299564&hl=es&z=17&output=embed",
   facebook: "https://www.facebook.com/profile.php?id=61557940066258",
   hours: {
-    weekdays: "Lun – Sáb: 8:00 – 20:00",
-    sunday: "Dom: consultar por WhatsApp",
+    weekdays: "Lunes a viernes: 8:30 a. m. – 6:30 p. m.",
+    saturday: "Sábado: 8:00 a. m. – 6:00 p. m.",
+    holidays: "Feriados: el horario puede variar. Gracias por su comprensión.",
   },
 } as const;
 

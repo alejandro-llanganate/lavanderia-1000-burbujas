@@ -117,7 +117,7 @@ export default function OrderSection() {
                 value={detalle}
                 onChange={(e) => setDetalle(e.target.value)}
                 rows={3}
-                placeholder="Dirección, cantidad, horario…"
+                placeholder="Cantidad de ropa, horario preferido…"
                 className="w-full rounded-xl border-2 border-tertiary px-4 py-3 focus:border-primary outline-none resize-none"
               />
             </div>

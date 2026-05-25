@@ -15,7 +15,7 @@ export default function LocationSection() {
     {
       icon: Clock,
       title: "Horario",
-      text: `${SITE.hours.weekdays} · ${SITE.hours.sunday}`,
+      text: `${SITE.hours.weekdays}\n${SITE.hours.saturday}\n${SITE.hours.holidays}`,
     },
     {
       icon: Phone,
